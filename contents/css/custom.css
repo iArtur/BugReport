@@ -1,0 +1,142 @@
+* {
+    font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+html, body {
+    overflow-y: visible;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 23px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.body-content {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    .my-wrapper-div{
+    	overflow: scroll;
+    	height: 90%;
+    }
+
+video {
+    width: 420px;
+    height: 200px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+
+/* NAVBAR */
+
+.navbar-brand {
+    padding-top: 10px;
+    color: #FFFFFF !important;
+}
+
+.btn-record {
+height: 28px; 
+width: 28px;   
+background-image:url('../../img/green_rec.png');
+background-repeat:no-repeat;
+}
+
+.btn-stop {
+height: 28px; 
+width: 28px;   
+background-image:url('../../img/stop.png');
+background-repeat:no-repeat;
+}
+
+
+.navbar-fixed-top > .container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-fixed-top > .container {
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #10A000;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+    }
+
+.navbar-fixed-bottom {
+    min-height: 30px !important;
+}
+
+.panel-heading
+{
+    background-color: #f5f5f5;
+}
+
+.panel-default > .panel-heading {
+    background-color: #EDEDED;
+}
+
+.panel-warning > .panel-heading {
+    color: #fff;
+    background-color: #4796C3;
+    border-color: #32312E;
+}
+
+/* HACK JQUERYUI */
+.ui-widget-content {
+    border: 0px !important;
+    color: #222222;
+}
+
+
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: relative;
+}
+
+
+
+.form-horizontal .radio, .form-horizontal .checkbox {
+    padding-left: 20px;
+    /*padding-top: 30px;*/
+    display: inline-block;
+}
+
+.navbar-fixed-bottom {
+    color: white;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-rigth {
+    float: right;
+}
+
+.tt-suggestion.tt-cursor {
+    cursor: default;
+}
+
+/* CORES */
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.grey {
+    color: #606060;
+}

@@ -1,0 +1,26 @@
+{
+  
+  //Required
+  "name": "Ecosistemas BugReport",
+  "manifest_version": 2,
+  "version" : "1.0",
+
+  "author": "Ecosistemas",
+
+  "description": "Extensão da Ecosistemas para report de bugs nas aplicações web.",
+ 
+  "icons": {
+    "16": "img/logo.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+
+  "permissions": [
+    "desktopCapture",
+    "app.window.fullscreen"
+  ]
+}
