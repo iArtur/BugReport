@@ -9,7 +9,7 @@ chrome.app.runtime.onLaunched.addListener(function() {
     },
      outerBounds: {
       maxWidth: 600,
-      maxHeight: 775
+      maxHeight: 776
     }
   });
 });
