@@ -201,10 +201,44 @@ function setMessage(message) {
     msgdiv.innerHTML = message;
 }
  
+ function MakeOtrsSoapRequest()
+ {
+     var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('POST', 'http://suporte.ecosistemas.com.br/otrs/nph-genericinterface.pl/Webservice/BugReportConnector', true);
+
+            // build SOAP request
+            var sr =
+                '<?xml version="1.0" encoding="utf-8"?>' +
+                '<soapenv:Envelope ' + 
+                    'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ' +
+                    'xmlns:api="http://127.0.0.1/Integrics/Enswitch/API" ' +
+                    'xmlns:xsd="http://www.w3.org/2001/XMLSchema" ' +
+                    'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">' +
+                    '<soapenv:Body>' +
+                        '<TicketCreate>' +
+                            '<UserLogin>artur.fernandes</UserLogin>' +
+                            '<Password>Hu11088879</Password>' +
+                        '</TicketCreate>' +
+                    '</soapenv:Body>' +
+                '</soapenv:Envelope>';
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4) {
+                    if (xmlhttp.status == 200) {
+
+                        alert('done use firebug to see response');
+                    }
+                }
+            }
+            // Send the POST request
+            xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+            xmlhttp.send(sr);
+ }
 
 function initEvents() {
   $('#record-me').addEventListener('click', toggleActivateRecordButton);
   $('#stop-me').addEventListener('click', stopCapture);
+  $('#Enviar').addEventListener('click',MakeOtrsSoapRequest)
 }
 
 initEvents();
